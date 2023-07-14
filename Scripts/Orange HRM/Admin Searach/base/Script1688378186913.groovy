@@ -17,13 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Orange HRM/base/Base Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/Logout/Page_OrangeHRM/i_Dashboard_oxd-icon bi-caret-down-fill oxd_d2fd49'))
-
-WebUI.click(findTestObject('Object Repository/Logout/Page_OrangeHRM/a_Logout'))
-
-WebUI.verifyElementText(findTestObject('Page_OrangeHRM/h5_Login'), '')
-
-WebUI.closeBrowser()
-

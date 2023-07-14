@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search By Employee Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>81b54955-c7ff-488d-9d03-d35ccf14460c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>68155035-e7c5-44ee-9238-db19737e69c5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>68155035-e7c5-44ee-9238-db19737e69c5</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

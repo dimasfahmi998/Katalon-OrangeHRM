@@ -17,13 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Orange HRM/base/Base Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Object Repository/Logout/Page_OrangeHRM/i_Dashboard_oxd-icon bi-caret-down-fill oxd_d2fd49'))
+WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-WebUI.click(findTestObject('Object Repository/Logout/Page_OrangeHRM/a_Logout'))
+WebUI.setText(findTestObject('Object Repository/LoginPage_OrangeHRM/input_Username_username'), 'Admin')
 
-WebUI.verifyElementText(findTestObject('Page_OrangeHRM/h5_Login'), '')
+WebUI.setEncryptedText(findTestObject('Object Repository/LoginPage_OrangeHRM/input_Password_password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/LoginPage_OrangeHRM/button_Login'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Admin'))
 
